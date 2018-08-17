@@ -4,8 +4,6 @@ import { withRouter } from 'react-router';
 class Signup extends Component{
     constructor(props){
         super(props);
-        console.log(this.props);
-
     }
     continueHandler = () => {
         this.props.history.push('/create');

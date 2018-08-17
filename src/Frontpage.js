@@ -28,11 +28,19 @@ class Frontpage extends Component {
     return (
         <div className="frontpageBackground">
             <div className="loginmodal">
-            <div className="loginsignup">
-                <button onClick={this.loginButtonHandler} className={"loginFormButton "+(this.state.activeSection=='login'?"active":"")}>Login</button>
-                <button onClick={this.signupButtonHandler} className={"signupFormButton "+(this.state.activeSection=='signup'?"active":"")}>Sign Up</button>
-            </div>
+                <div className="loginsignup">
+                    <button onClick={this.loginButtonHandler} className={"loginFormButton "+(this.state.activeSection=='login'?"active":"")}>Login</button>
+                    <button onClick={this.signupButtonHandler} className={"signupFormButton "+(this.state.activeSection=='signup'?"active":"")}>Sign Up</button>
+                </div>
                 { sectionContent }
+                <div className="emptySpaceFrontpageModal">
+                </div>
+                <div className="modalFooter">
+                </div>
+            </div>
+            <div className="emptySpaceFrontpage">
+            </div>
+            <div className="frontpageFooter">
             </div>
         </div>
     );
